@@ -45,7 +45,7 @@ apply plugin: 'net.nemerosa.versioning'
 
 ext {
     mainClass = (properties.get("mainClass") == null) ? "" : "${mainClass}"
-    hadoopVersion = (properties.get("hadoopVersion") == null) ? "2.7.0" : "${hadoopVersion}"
+    hadoopVersion = (properties.get("hadoopVersion") == null) ? "2.6.0" : "${hadoopVersion}"
     println("Building with hadoopVersion: ${hadoopVersion}")
 }
 

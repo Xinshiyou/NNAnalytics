@@ -556,7 +556,8 @@ public class NameNodeLoader {
     } catch (IOException e) {
       LOG.error("Error with getContentSummary.", e);
     }
-    return new ContentSummary.Builder().fileCount(0L).directoryCount(0L).build();
+    return new ContentSummary(0, 0, 0);
+//    return new ContentSummary.Builder().fileCount(0L).directoryCount(0L).build();
   }
 
   /**
